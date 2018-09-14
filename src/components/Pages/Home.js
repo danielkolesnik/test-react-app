@@ -6,13 +6,6 @@ export default class Home extends Component {
     constructor( props ) {
         super(props);
 
-
-        /*
-        * We able to change state by using special method( parent assync method ) like:
-        * this.setState({
-        *     isOpen: false
-        * });
-        */
         this.state = {
 
         }
