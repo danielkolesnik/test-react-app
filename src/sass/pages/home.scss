@@ -1,0 +1,8 @@
+$variableColor: #FACFAC;
+
+body {
+  .someNestedSelector {
+    background-color: $variableColor;
+  }
+
+}

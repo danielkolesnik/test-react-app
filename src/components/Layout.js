@@ -12,12 +12,12 @@ import Error from './Pages/Error';
 
 export default class Layout extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            userName: 'unknown'
-        };
-    }
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         userName: 'unknown'
+    //     };
+    // }
 
 
     render() {
@@ -27,7 +27,8 @@ export default class Layout extends React.Component {
                     <Route path='/' component={ Header }/>
                     <Switch>
                         <Route path='/' component={ Home } exact/>
-                        <Route path='/other' component={ Other }/>
+                        { /*<Route path='/other' component={ Other } exact strict/>*/ }
+                        <Route path='/other/:subCase' component={ Other }/>
                         <Route component={ Error }/>
                     </Switch>
                     <Route path='/' component={ Footer }/>

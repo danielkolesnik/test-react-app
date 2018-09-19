@@ -14,16 +14,49 @@ export default class Other extends Component {
         */
         this.state = {
 
-        }
+        };
+
+        console.log(this.props);
     }
 
     render() {
+
         return (
             <div id={'other'}>
                 <h2>
-                    Other page!
+                    {(this.props.match.params.subCase).toUpperCase()} page!
                 </h2>
             </div>
         )
     }
+
+
+    componentWillMount() {
+
+    }
+    // initial rendering
+    componentDidMount() {
+        // console.log('MOUNT HAPPENED');
+    }
+
+    componentWillReceiveProps() {
+
+    }
+    // state changed or received new props
+    shouldComponentUpdate() {
+        return true;
+    }
+
+    componentWillUpdate() {
+
+    }
+
+    componentDidUpdate() {
+
+    }
+
+    componentWillUnmount() {
+        // console.log('UN-MOUNT HAPPENED');
+    }
+
 }
